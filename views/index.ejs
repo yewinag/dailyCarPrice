@@ -21,10 +21,10 @@
     let myChart = new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ["day1", "day2","day3", "day4"],
+        labels: ["day1","day2","day3", "day4","day5","day6", "day7"],
         datasets: [{
           label: '#',          
-          data: [<% price %>],
+          data: [4,5,3,2,5,6,7],
           backgroundColor: [
             'rgba(255, 99, 132, 0.2)',
             'rgba(54, 162, 235, 0.2)'
@@ -46,7 +46,7 @@
          },
          title: {
             display: true,
-            text: 'Number of users over and under 18 years old',
+            text: 'Maximum number',
             fontSize: 18
         }
      }

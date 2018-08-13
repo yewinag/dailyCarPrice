@@ -17,12 +17,8 @@ Run app
 ```
 npm start
 ```
-
-## To generate users:
-```
-http://localhost:3000/generate
-```
-Or change 3000 by your port. **This create 100 users**
+- when starting server will be write data 30, next day it will be write next 30 data.
+- chart show most price data in each day
 
 ## Built With
 
@@ -30,7 +26,6 @@ Or change 3000 by your port. **This create 100 users**
 * Express.Js
 * MongoDB
 * Chart.Js
-* Faker.Js
 
 ## Author
 

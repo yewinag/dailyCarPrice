@@ -11,8 +11,8 @@ require('./libs/db-connection');
 app.set('view engine', 'ejs');
 
 // write data to database daily
-// addDataDaily();
-// setInterval( ()=>addDataDaily(), 259200000)
+addDataDaily();
+setInterval( ()=>addDataDaily(), 259200000)
 
 function addDataDaily(){            
     for (let i = 0; i < 30; i++) {          
@@ -49,8 +49,8 @@ app.get('/', (req, res) => {
     "_id": null,
     "max": { "$max": "$price" },     
 }})
-    .then(price => {                  
-      res.render('index',price[0].max);
+    .then(car => {                  
+      res.render('index',car);
     })
     .catch(err => console.error(err));    
 });
