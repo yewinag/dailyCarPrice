@@ -29,8 +29,6 @@ npm start
 
 ## Author
 
-**germancutraro**
-
 ## Why
 
-* Practise
+* pratice
